@@ -7,14 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "HelicopterView.h"
 
 @interface exercise1ViewController : UIViewController {
 @private
-    UIImageView *imageView;
-//    UIView *view;
+    HelicopterView *heli1;
 }
 
-@property(nonatomic, retain) IBOutlet UIImageView *imageView;
-//@property(nonatomic, retain) IBOutlet UIView *view;
+@property(nonatomic, retain) IBOutlet HelicopterView *heli1;
 
 @end

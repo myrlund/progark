@@ -10,7 +10,7 @@
 
 @implementation exercise1ViewController
 
-@synthesize imageView;
+@synthesize heli1;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -47,6 +47,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    heli1.animationImages = [NSArray arrayWithObjects:[UIImage imageNamed:@"heli1.png"], [UIImage imageNamed:@"heli2.png"], [UIImage imageNamed:@"heli3.png"], [UIImage imageNamed:@"heli4.png"], nil];
+    NSLog(@"%@", [UIImage imageNamed:@"heli1.png"]);
+    heli1.animationRepeatCount = 0;
+    heli1.animationDuration = 0.30;
+    [heli1 startAnimating];
 }
 
 

@@ -13,10 +13,18 @@
 @private
     UIView *view;
     
+    // Movement
+    CGPoint direction;
+    float velocity;
+    
     CGPoint dragOffset;
     
 }
 
 @property(nonatomic, retain) IBOutlet UIView *view;
+
+- (void)handleRotation:(UIGestureRecognizer *)sender;
+- (void)move;
+- (void)bump:(CGRectEdge)atEdge;
 
 @end

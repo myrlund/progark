@@ -24,6 +24,10 @@
 		DD1103BE12E9099D0021EF23 /* exercise1Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = DD1103BD12E9099D0021EF23 /* exercise1Tests.m */; };
 		DD1103C912E90F9E0021EF23 /* HelicopterView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD1103C812E90F9E0021EF23 /* HelicopterView.m */; };
 		DD1103CB12E915AC0021EF23 /* helicopter.png in Resources */ = {isa = PBXBuildFile; fileRef = DD1103CA12E915AC0021EF23 /* helicopter.png */; };
+		DD419B9012F3280100D816C4 /* heli1.png in Resources */ = {isa = PBXBuildFile; fileRef = DD419B8C12F3280100D816C4 /* heli1.png */; };
+		DD419B9112F3280100D816C4 /* heli2.png in Resources */ = {isa = PBXBuildFile; fileRef = DD419B8D12F3280100D816C4 /* heli2.png */; };
+		DD419B9212F3280100D816C4 /* heli3.png in Resources */ = {isa = PBXBuildFile; fileRef = DD419B8E12F3280100D816C4 /* heli3.png */; };
+		DD419B9312F3280100D816C4 /* heli4.png in Resources */ = {isa = PBXBuildFile; fileRef = DD419B8F12F3280100D816C4 /* heli4.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +54,10 @@
 		DD1103C712E90F9E0021EF23 /* HelicopterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelicopterView.h; sourceTree = "<group>"; };
 		DD1103C812E90F9E0021EF23 /* HelicopterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelicopterView.m; sourceTree = "<group>"; };
 		DD1103CA12E915AC0021EF23 /* helicopter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = helicopter.png; path = /Users/jonas/Downloads/helicopter.png; sourceTree = "<absolute>"; };
+		DD419B8C12F3280100D816C4 /* heli1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = heli1.png; path = Resources/heli1.png; sourceTree = "<group>"; };
+		DD419B8D12F3280100D816C4 /* heli2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = heli2.png; path = Resources/heli2.png; sourceTree = "<group>"; };
+		DD419B8E12F3280100D816C4 /* heli3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = heli3.png; path = Resources/heli3.png; sourceTree = "<group>"; };
+		DD419B8F12F3280100D816C4 /* heli4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = heli4.png; path = Resources/heli4.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +132,10 @@
 		DD11039712E9099C0021EF23 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				DD419B8C12F3280100D816C4 /* heli1.png */,
+				DD419B8D12F3280100D816C4 /* heli2.png */,
+				DD419B8E12F3280100D816C4 /* heli3.png */,
+				DD419B8F12F3280100D816C4 /* heli4.png */,
 				DD11039812E9099C0021EF23 /* exercise1-Info.plist */,
 				DD11039912E9099C0021EF23 /* InfoPlist.strings */,
 				DD11039C12E9099C0021EF23 /* exercise1-Prefix.pch */,
@@ -223,6 +235,10 @@
 				DD1103A412E9099C0021EF23 /* MainWindow.xib in Resources */,
 				DD1103AA12E9099C0021EF23 /* exercise1ViewController.xib in Resources */,
 				DD1103CB12E915AC0021EF23 /* helicopter.png in Resources */,
+				DD419B9012F3280100D816C4 /* heli1.png in Resources */,
+				DD419B9112F3280100D816C4 /* heli2.png in Resources */,
+				DD419B9212F3280100D816C4 /* heli3.png in Resources */,
+				DD419B9312F3280100D816C4 /* heli4.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,6 +447,7 @@
 				DD1103C312E9099D0021EF23 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DD1103C412E9099D0021EF23 /* Build configuration list for PBXNativeTarget "exercise1Tests" */ = {
 			isa = XCConfigurationList;
@@ -439,6 +456,7 @@
 				DD1103C612E9099D0021EF23 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

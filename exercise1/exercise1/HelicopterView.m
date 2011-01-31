@@ -13,6 +13,23 @@
 
 @synthesize view;
 
+- (id)initWithImage:(UIImage *)image {
+    if (self = [super initWithImage:image]) {
+        NSLog(@"OK");
+    }
+    return self;
+}
+
+- (void)handleRotation:(UIGestureRecognizer *)sender {
+    NSLog(@"Rotated!");
+}
+
+- (void)move {
+    CGRect pos = [self frame];
+    pos.origin.x += direction.x * velocity;
+    pos.origin.x += direction.y * velocity;
+}
+
 - (void)moveWithEvent:(UIEvent *)event {
     // Get one touch event and its point
     UITouch *touch = [[event allTouches] anyObject];
@@ -50,5 +67,6 @@
 - (IBAction)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event {
     [self moveWithEvent:event];
 }
+
 
 @end

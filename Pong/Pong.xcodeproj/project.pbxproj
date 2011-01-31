@@ -1,0 +1,476 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DD419BF612F3715400D816C4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD419BF512F3715400D816C4 /* UIKit.framework */; };
+		DD419BF812F3715400D816C4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD419BF712F3715400D816C4 /* Foundation.framework */; };
+		DD419BFA12F3715400D816C4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD419BF912F3715400D816C4 /* CoreGraphics.framework */; };
+		DD419C0012F3715400D816C4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DD419BFE12F3715400D816C4 /* InfoPlist.strings */; };
+		DD419C0312F3715400D816C4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DD419C0212F3715400D816C4 /* main.m */; };
+		DD419C0612F3715500D816C4 /* PongAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DD419C0512F3715500D816C4 /* PongAppDelegate.m */; };
+		DD419C0912F3715500D816C4 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD419C0712F3715500D816C4 /* MainWindow.xib */; };
+		DD419C0C12F3715500D816C4 /* PongViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD419C0B12F3715500D816C4 /* PongViewController.m */; };
+		DD419C0F12F3715500D816C4 /* PongViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD419C0D12F3715500D816C4 /* PongViewController.xib */; };
+		DD419C1612F3715500D816C4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD419BF512F3715400D816C4 /* UIKit.framework */; };
+		DD419C1712F3715500D816C4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD419BF712F3715400D816C4 /* Foundation.framework */; };
+		DD419C1812F3715500D816C4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD419BF912F3715400D816C4 /* CoreGraphics.framework */; };
+		DD419C1E12F3715500D816C4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DD419C1C12F3715500D816C4 /* InfoPlist.strings */; };
+		DD419C2112F3715500D816C4 /* PongTests.h in Resources */ = {isa = PBXBuildFile; fileRef = DD419C2012F3715500D816C4 /* PongTests.h */; };
+		DD419C2312F3715500D816C4 /* PongTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DD419C2212F3715500D816C4 /* PongTests.m */; };
+		DD419C2D12F3735000D816C4 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = DD419C2C12F3735000D816C4 /* background.png */; };
+		DD419C3012F3739600D816C4 /* Paddle.m in Sources */ = {isa = PBXBuildFile; fileRef = DD419C2F12F3739600D816C4 /* Paddle.m */; };
+		DD419C3212F3794A00D816C4 /* paddle.png in Resources */ = {isa = PBXBuildFile; fileRef = DD419C3112F3794A00D816C4 /* paddle.png */; };
+		DD419C3412F3819200D816C4 /* ball.png in Resources */ = {isa = PBXBuildFile; fileRef = DD419C3312F3819200D816C4 /* ball.png */; };
+		DD419C3712F382A700D816C4 /* Ball.m in Sources */ = {isa = PBXBuildFile; fileRef = DD419C3612F382A700D816C4 /* Ball.m */; };
+		DD419C3912F38F2500D816C4 /* icon-57.png in Resources */ = {isa = PBXBuildFile; fileRef = DD419C3812F38F2500D816C4 /* icon-57.png */; };
+		DD419C3B12F38F2C00D816C4 /* icon-114.png in Resources */ = {isa = PBXBuildFile; fileRef = DD419C3A12F38F2C00D816C4 /* icon-114.png */; };
+		DD419C3D12F38F3700D816C4 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = DD419C3C12F38F3700D816C4 /* Default.png */; };
+		DD419C3F12F38F9200D816C4 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DD419C3E12F38F9200D816C4 /* Default@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DD419BF112F3715400D816C4 /* Pong.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pong.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD419BF512F3715400D816C4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DD419BF712F3715400D816C4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DD419BF912F3715400D816C4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DD419BFD12F3715400D816C4 /* Pong-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Pong-Info.plist"; sourceTree = "<group>"; };
+		DD419BFF12F3715400D816C4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DD419C0112F3715400D816C4 /* Pong-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Pong-Prefix.pch"; sourceTree = "<group>"; };
+		DD419C0212F3715400D816C4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DD419C0412F3715500D816C4 /* PongAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PongAppDelegate.h; sourceTree = "<group>"; };
+		DD419C0512F3715500D816C4 /* PongAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PongAppDelegate.m; sourceTree = "<group>"; };
+		DD419C0812F3715500D816C4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		DD419C0A12F3715500D816C4 /* PongViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PongViewController.h; sourceTree = "<group>"; };
+		DD419C0B12F3715500D816C4 /* PongViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PongViewController.m; sourceTree = "<group>"; };
+		DD419C0E12F3715500D816C4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/PongViewController.xib; sourceTree = "<group>"; };
+		DD419C1512F3715500D816C4 /* PongTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PongTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD419C1B12F3715500D816C4 /* PongTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PongTests-Info.plist"; sourceTree = "<group>"; };
+		DD419C1D12F3715500D816C4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DD419C1F12F3715500D816C4 /* PongTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PongTests-Prefix.pch"; sourceTree = "<group>"; };
+		DD419C2012F3715500D816C4 /* PongTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PongTests.h; sourceTree = "<group>"; };
+		DD419C2212F3715500D816C4 /* PongTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PongTests.m; sourceTree = "<group>"; };
+		DD419C2C12F3735000D816C4 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = background.png; path = Resources/background.png; sourceTree = "<group>"; };
+		DD419C2E12F3739600D816C4 /* Paddle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Paddle.h; sourceTree = "<group>"; };
+		DD419C2F12F3739600D816C4 /* Paddle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Paddle.m; sourceTree = "<group>"; };
+		DD419C3112F3794A00D816C4 /* paddle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = paddle.png; path = Resources/paddle.png; sourceTree = "<group>"; };
+		DD419C3312F3819200D816C4 /* ball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ball.png; path = Resources/ball.png; sourceTree = "<group>"; };
+		DD419C3512F382A700D816C4 /* Ball.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ball.h; sourceTree = "<group>"; };
+		DD419C3612F382A700D816C4 /* Ball.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ball.m; sourceTree = "<group>"; };
+		DD419C3812F38F2500D816C4 /* icon-57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-57.png"; sourceTree = "<group>"; };
+		DD419C3A12F38F2C00D816C4 /* icon-114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-114.png"; sourceTree = "<group>"; };
+		DD419C3C12F38F3700D816C4 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		DD419C3E12F38F9200D816C4 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DD419BEE12F3715400D816C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD419BF612F3715400D816C4 /* UIKit.framework in Frameworks */,
+				DD419BF812F3715400D816C4 /* Foundation.framework in Frameworks */,
+				DD419BFA12F3715400D816C4 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD419C1112F3715500D816C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD419C1612F3715500D816C4 /* UIKit.framework in Frameworks */,
+				DD419C1712F3715500D816C4 /* Foundation.framework in Frameworks */,
+				DD419C1812F3715500D816C4 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DD419BE612F3715400D816C4 = {
+			isa = PBXGroup;
+			children = (
+				DD419C3E12F38F9200D816C4 /* Default@2x.png */,
+				DD419C3C12F38F3700D816C4 /* Default.png */,
+				DD419C3A12F38F2C00D816C4 /* icon-114.png */,
+				DD419C3812F38F2500D816C4 /* icon-57.png */,
+				DD419BFB12F3715400D816C4 /* Pong */,
+				DD419C1912F3715500D816C4 /* PongTests */,
+				DD419BF412F3715400D816C4 /* Frameworks */,
+				DD419BF212F3715400D816C4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DD419BF212F3715400D816C4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DD419BF112F3715400D816C4 /* Pong.app */,
+				DD419C1512F3715500D816C4 /* PongTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DD419BF412F3715400D816C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DD419BF512F3715400D816C4 /* UIKit.framework */,
+				DD419BF712F3715400D816C4 /* Foundation.framework */,
+				DD419BF912F3715400D816C4 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DD419BFB12F3715400D816C4 /* Pong */ = {
+			isa = PBXGroup;
+			children = (
+				DD419C0412F3715500D816C4 /* PongAppDelegate.h */,
+				DD419C0512F3715500D816C4 /* PongAppDelegate.m */,
+				DD419C0712F3715500D816C4 /* MainWindow.xib */,
+				DD419C3512F382A700D816C4 /* Ball.h */,
+				DD419C3612F382A700D816C4 /* Ball.m */,
+				DD419C2E12F3739600D816C4 /* Paddle.h */,
+				DD419C2F12F3739600D816C4 /* Paddle.m */,
+				DD419C0A12F3715500D816C4 /* PongViewController.h */,
+				DD419C0B12F3715500D816C4 /* PongViewController.m */,
+				DD419C0D12F3715500D816C4 /* PongViewController.xib */,
+				DD419BFC12F3715400D816C4 /* Supporting Files */,
+			);
+			path = Pong;
+			sourceTree = "<group>";
+		};
+		DD419BFC12F3715400D816C4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DD419C3312F3819200D816C4 /* ball.png */,
+				DD419C3112F3794A00D816C4 /* paddle.png */,
+				DD419C2C12F3735000D816C4 /* background.png */,
+				DD419BFD12F3715400D816C4 /* Pong-Info.plist */,
+				DD419BFE12F3715400D816C4 /* InfoPlist.strings */,
+				DD419C0112F3715400D816C4 /* Pong-Prefix.pch */,
+				DD419C0212F3715400D816C4 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DD419C1912F3715500D816C4 /* PongTests */ = {
+			isa = PBXGroup;
+			children = (
+				DD419C2012F3715500D816C4 /* PongTests.h */,
+				DD419C2212F3715500D816C4 /* PongTests.m */,
+				DD419C1A12F3715500D816C4 /* Supporting Files */,
+			);
+			path = PongTests;
+			sourceTree = "<group>";
+		};
+		DD419C1A12F3715500D816C4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DD419C1B12F3715500D816C4 /* PongTests-Info.plist */,
+				DD419C1C12F3715500D816C4 /* InfoPlist.strings */,
+				DD419C1F12F3715500D816C4 /* PongTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DD419BF012F3715400D816C4 /* Pong */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD419C2612F3715500D816C4 /* Build configuration list for PBXNativeTarget "Pong" */;
+			buildPhases = (
+				DD419BED12F3715400D816C4 /* Sources */,
+				DD419BEE12F3715400D816C4 /* Frameworks */,
+				DD419BEF12F3715400D816C4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pong;
+			productName = Pong;
+			productReference = DD419BF112F3715400D816C4 /* Pong.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DD419C1412F3715500D816C4 /* PongTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD419C2912F3715500D816C4 /* Build configuration list for PBXNativeTarget "PongTests" */;
+			buildPhases = (
+				DD419C1012F3715500D816C4 /* Sources */,
+				DD419C1112F3715500D816C4 /* Frameworks */,
+				DD419C1212F3715500D816C4 /* Resources */,
+				DD419C1312F3715500D816C4 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PongTests;
+			productName = PongTests;
+			productReference = DD419C1512F3715500D816C4 /* PongTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DD419BE812F3715400D816C4 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = DD419BEB12F3715400D816C4 /* Build configuration list for PBXProject "Pong" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DD419BE612F3715400D816C4;
+			productRefGroup = DD419BF212F3715400D816C4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DD419BF012F3715400D816C4 /* Pong */,
+				DD419C1412F3715500D816C4 /* PongTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DD419BEF12F3715400D816C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD419C0012F3715400D816C4 /* InfoPlist.strings in Resources */,
+				DD419C0912F3715500D816C4 /* MainWindow.xib in Resources */,
+				DD419C0F12F3715500D816C4 /* PongViewController.xib in Resources */,
+				DD419C2D12F3735000D816C4 /* background.png in Resources */,
+				DD419C3212F3794A00D816C4 /* paddle.png in Resources */,
+				DD419C3412F3819200D816C4 /* ball.png in Resources */,
+				DD419C3912F38F2500D816C4 /* icon-57.png in Resources */,
+				DD419C3B12F38F2C00D816C4 /* icon-114.png in Resources */,
+				DD419C3D12F38F3700D816C4 /* Default.png in Resources */,
+				DD419C3F12F38F9200D816C4 /* Default@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD419C1212F3715500D816C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD419C1E12F3715500D816C4 /* InfoPlist.strings in Resources */,
+				DD419C2112F3715500D816C4 /* PongTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DD419C1312F3715500D816C4 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DD419BED12F3715400D816C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD419C0312F3715400D816C4 /* main.m in Sources */,
+				DD419C0612F3715500D816C4 /* PongAppDelegate.m in Sources */,
+				DD419C0C12F3715500D816C4 /* PongViewController.m in Sources */,
+				DD419C3012F3739600D816C4 /* Paddle.m in Sources */,
+				DD419C3712F382A700D816C4 /* Ball.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD419C1012F3715500D816C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD419C2312F3715500D816C4 /* PongTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DD419BFE12F3715400D816C4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD419BFF12F3715400D816C4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		DD419C0712F3715500D816C4 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD419C0812F3715500D816C4 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		DD419C0D12F3715500D816C4 /* PongViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD419C0E12F3715500D816C4 /* en */,
+			);
+			name = PongViewController.xib;
+			sourceTree = "<group>";
+		};
+		DD419C1C12F3715500D816C4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD419C1D12F3715500D816C4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DD419C2412F3715500D816C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DD419C2512F3715500D816C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		DD419C2712F3715500D816C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pong/Pong-Prefix.pch";
+				INFOPLIST_FILE = "Pong/Pong-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DD419C2812F3715500D816C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pong/Pong-Prefix.pch";
+				INFOPLIST_FILE = "Pong/Pong-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		DD419C2A12F3715500D816C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Pong.app/Pong";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PongTests/PongTests-Prefix.pch";
+				INFOPLIST_FILE = "PongTests/PongTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		DD419C2B12F3715500D816C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Pong.app/Pong";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PongTests/PongTests-Prefix.pch";
+				INFOPLIST_FILE = "PongTests/PongTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DD419BEB12F3715400D816C4 /* Build configuration list for PBXProject "Pong" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD419C2412F3715500D816C4 /* Debug */,
+				DD419C2512F3715500D816C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD419C2612F3715500D816C4 /* Build configuration list for PBXNativeTarget "Pong" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD419C2712F3715500D816C4 /* Debug */,
+				DD419C2812F3715500D816C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DD419C2912F3715500D816C4 /* Build configuration list for PBXNativeTarget "PongTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD419C2A12F3715500D816C4 /* Debug */,
+				DD419C2B12F3715500D816C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DD419BE812F3715400D816C4 /* Project object */;
+}
